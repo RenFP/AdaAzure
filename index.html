@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de API CRUD</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { margin: 5px; padding: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+    <h2>Teste de API CRUD</h2>
+    
+    <input type="text" id="name" placeholder="Nome">
+    <input type="text" id="email" placeholder="Email">
+    <button onclick="createUser()">Adicionar</button>
+    <button onclick="getUsers()">Listar Usuários</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody"></tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
